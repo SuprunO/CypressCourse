@@ -4,5 +4,6 @@ describe("My fourth Test Suite", function () {
     cy.get("#mousehover").invoke("show");
     cy.contains("Top").click({ force: true }); // with no hover
     cy.url().should("include", "#top");
+
   });
 });
